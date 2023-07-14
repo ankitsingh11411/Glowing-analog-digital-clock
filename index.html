@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Glow clock by ASR</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="time">
+      <div class="circle">
+        <div class="dots sec_dot c1" style="--clr: #fff"></div>
+        <svg>
+          <circle cx="120" cy="120" r="120" id="ss" stroke="#fff"></circle>
+        </svg>
+      </div>
+      <div class="circle">
+        <div class="dots min_dot c2" style="--clr: rgb(0, 26, 255)"></div>
+        <svg>
+          <circle
+            cx="100"
+            cy="100"
+            r="100"
+            id="mm"
+            stroke="rgb(233, 3, 3)"
+          ></circle>
+        </svg>
+      </div>
+      <div class="circle">
+        <div class="dots hr_dot c3" style="--clr: rgb(233, 3, 3)"></div>
+        <svg>
+          <circle
+            cx="80"
+            cy="80"
+            r="80"
+            id="hh"
+            stroke="rgb(0, 26, 255)"
+          ></circle>
+        </svg>
+      </div>
+
+      <div class="timeBx">
+        <div id="hours" style="--c: fff">00</div>
+        <div id="minutes" style="--c: fff">00</div>
+        <div id="seconds" style="--c: fff">00</div>
+        <div class="ap" style="--c: #fff"><div id="ampm"></div></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
